@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1020.pemesanantiketpesawat.MainActivity">
+
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewKtp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.23"
+            android:src="@drawable/kaple" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="6.81"
+            android:text="Form Pemesanan TIket"
+            android:textColor="#742f07"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="3.45"
+            android:text="  " />
+
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Anda:"
+            android:textColor="#0a0909" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewKtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="Nomer KTP:"
+            android:textColor="#070707" />
+
+        <EditText
+            android:id="@+id/editTextKtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.23"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/J"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:text="Jenis Maskapai:"
+            android:textColor="#060606" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroupMas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonEko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Ekonomi" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonExc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Exclusive" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Premium" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewAsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="Kota Asal :" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_weight="0.23" />
+
+        <TextView
+            android:id="@+id/textViewTujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="Kota Tujuan:" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_weight="0.23" />
+
+        <TextView
+            android:id="@+id/textView3Tamb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="Pelayanan Tambahan:" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSelimut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:checked="false"
+            android:text="Sellimut" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:checked="false"
+            android:text="Makan Gratis" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTaxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:checked="false"
+            android:text="Gratis Taxi(Pulang-Pergi)" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="  " />
+
+        <Button
+            android:id="@+id/buttonPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.23"
+            android:text="Pesan" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.23"
+            android:singleLine="false"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            tools:text="Detail Pesanan:" />
+
+</LinearLayout>
+
+</ScrollView>

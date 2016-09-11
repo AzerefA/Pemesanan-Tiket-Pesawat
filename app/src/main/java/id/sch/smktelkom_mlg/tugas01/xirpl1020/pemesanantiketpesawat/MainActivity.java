@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -46,12 +47,23 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void doClick() {
-
+        String hasil = null;
         String nama = etNama.getText().toString();
         String ktp = etKtp.getText().toString();
 
+
+        if (rgMas.getCheckedRadioButtonId() != -1) {
+            RadioButton rb = (RadioButton)
+                    findViewById(rgMas.getCheckedRadioButtonId());
+            hasil = rb.getText().toString();
+        }
+
+        if (hasil == null) {
+            tvHasil.setText("Detail Pemesanan:\n" + "Nama Anda:" + nama + "\nNomer KTP Anda:" + ktp + "\nJenis Maskapai:Belum Memilih");
+        }
+
         if (isVallid()) {
-            tvHasil.setText("Detail Pemesanan:\n" + "Nama Anda:" + nama + "\nNomer KTP Anda:" + ktp);
+            tvHasil.setText("Detail Pemesanan:\n" + "Nama Anda:" + nama + "\nNomer KTP Anda:" + ktp+"\nJenis Maskapai:" + hasil);
         }
 
     }

@@ -50,7 +50,11 @@ public class MainActivity extends AppCompatActivity {
         String hasil = null;
         String nama = etNama.getText().toString();
         String ktp = etKtp.getText().toString();
+        String check =" ";
 
+        if (cbSel.isChecked()) check += "-" + cbSel.getText() + "\n";
+        if (cbTax.isChecked()) check += "-" + cbTax.getText() + "\n";
+        if (cbMak.isChecked()) check += "-" + cbMak.getText() + "\n";
 
         if (rgMas.getCheckedRadioButtonId() != -1) {
             RadioButton rb = (RadioButton)
@@ -63,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (isVallid()) {
-            tvHasil.setText("Detail Pemesanan:\n" + "Nama Anda:" + nama + "\nNomer KTP Anda:" + ktp+"\nJenis Maskapai:" + hasil);
+            tvHasil.setText("Detail Pemesanan:\n" + "Nama Anda:" + nama + "\nNomer KTP Anda:" + ktp+"\nJenis Maskapai:" + hasil+"\nPelayanan Tambahan:\n" + check );
         }
 
     }

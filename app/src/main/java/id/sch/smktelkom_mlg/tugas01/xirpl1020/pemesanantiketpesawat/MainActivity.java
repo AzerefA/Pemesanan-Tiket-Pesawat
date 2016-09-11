@@ -47,10 +47,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void doClick() {
-        String hasil = null;
+        String hasil = "Belum Memilih";
         String nama = etNama.getText().toString();
         String ktp = etKtp.getText().toString();
         String check =" ";
+        String asal = kotaA.getSelectedItem().toString();
+        String tujuan = kotaT.getSelectedItem().toString();
 
         if (cbSel.isChecked()) check += "-" + cbSel.getText() + "\n";
         if (cbTax.isChecked()) check += "-" + cbTax.getText() + "\n";
@@ -62,12 +64,12 @@ public class MainActivity extends AppCompatActivity {
             hasil = rb.getText().toString();
         }
 
-        if (hasil == null) {
+        if (hasil == "Belum Memilih") {
             tvHasil.setText("Detail Pemesanan:\n" + "Nama Anda:" + nama + "\nNomer KTP Anda:" + ktp + "\nJenis Maskapai:Belum Memilih");
         }
 
         if (isVallid()) {
-            tvHasil.setText("Detail Pemesanan:\n" + "Nama Anda:" + nama + "\nNomer KTP Anda:" + ktp+"\nJenis Maskapai:" + hasil+"\nPelayanan Tambahan:\n" + check );
+            tvHasil.setText("Detail Pemesanan:\n" + "Nama Anda:" + nama + "\nNomer KTP Anda:" + ktp+"\nJenis Maskapai:" + hasil+"\nPelayanan Tambahan:\n" + check+"Kota Asal:" + asal + "\nKota Tujuan:" + tujuan );
         }
 
     }

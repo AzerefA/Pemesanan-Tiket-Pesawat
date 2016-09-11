@@ -126,6 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerAsal"
+            android:entries="@array/kota"
             android:layout_weight="0.23" />
 
         <TextView
@@ -138,6 +139,7 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:entries="@array/kota"
             android:id="@+id/spinnerTujuan"
             android:layout_weight="0.23" />
 

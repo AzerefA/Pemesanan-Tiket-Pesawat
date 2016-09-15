@@ -12,7 +12,8 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:weightSum="1"
-        tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1020.pemesanantiketpesawat.MainActivity">
+        tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1020.pemesanantiketpesawat.MainActivity"
+        android:background="#43322c">
 
 
         <ImageView
@@ -34,7 +35,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="6.81"
             android:text="Form Pemesanan TIket"
-            android:textColor="#742f07"
+            android:textColor="#ae9789"
             android:textStyle="bold" />
 
         <TextView
@@ -42,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Anda:"
-            android:textColor="#0a0909" />
+            android:textColor="#ebebeb" />
 
         <EditText
             android:id="@+id/editTextNama"
@@ -55,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.05"
             android:text="Nomer KTP:"
-            android:textColor="#070707" />
+            android:textColor="#f1efef" />
 
         <EditText
             android:id="@+id/editTextKtp"
@@ -72,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.09"
             android:text="Jenis Maskapai:"
-            android:textColor="#060606" />
+            android:textColor="#f2eded" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,21 +91,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Ekonomi" />
+                    android:text="Ekonomi"
+                    android:textColor="#f8f2f2" />
 
                 <RadioButton
                     android:id="@+id/radioButtonExc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Exclusive" />
+                    android:text="Exclusive"
+                    android:textColor="#faf7f7" />
 
                 <RadioButton
                     android:id="@+id/radioButtonPre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Premium" />
+                    android:text="Premium"
+                    android:textColor="#f8f4f4" />
             </RadioGroup>
         </LinearLayout>
 
@@ -141,7 +145,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.23"
-            android:text="Pelayanan Tambahan:" />
+            android:text="Pelayanan Tambahan:"
+            android:textColor="#fdfafa" />
 
         <CheckBox
             android:id="@+id/checkBoxSelimut"
@@ -149,7 +154,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.23"
             android:checked="false"
-            android:text="Sellimut" />
+            android:text="Sellimut"
+            android:textColor="#fffdfd" />
 
         <CheckBox
             android:id="@+id/checkBoxMakan"
@@ -157,7 +163,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.23"
             android:checked="false"
-            android:text="Makan Gratis" />
+            android:text="Makan Gratis"
+            android:textColor="#f6eeee" />
 
         <CheckBox
             android:id="@+id/checkBoxTaxi"
@@ -165,7 +172,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.23"
             android:checked="false"
-            android:text="Gratis Taxi(Pulang-Pergi)" />
+            android:text="Gratis Taxi(Pulang-Pergi)"
+            android:textColor="#f9f0f0" />
 
         <TextView
             android:id="@+id/textView3"
@@ -180,7 +188,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.23"
-            android:text="Pesan" />
+            android:text="Pesan"
+            android:background="#a74809" />
 
         <TextView
             android:id="@+id/textViewHasil"
@@ -190,10 +199,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.23"
             android:singleLine="false"
-            android:textColor="#010101"
+            android:textColor="#cecccc"
             android:textStyle="bold"
             tools:text="Detail Pesanan:" />
 
-</LinearLayout>
+    </LinearLayout>
 
 </ScrollView>

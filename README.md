@@ -22,7 +22,7 @@
   ![Screenshoot 4](https://docs.google.com/uc?id=0Bxzv7ZNEpQLtMWQ2b000ZUlyb2M)
   
 ##C.Link Aplikasi
-  [Google Drive/Pemesanan Tiket Pesawat](https://drive.google.com/open?id=0Bxzv7ZNEpQLtdnhRQ2NybXpPb00)
+  [Google Drive/Pemesanan Tiket Pesawat](https://drive.google.com/open?id=0Bxzv7ZNEpQLtWlowalpNdlFuVkk)
   
 ##D.Data Diri
   __Nama:Muchammad In'am Awaludin__
